@@ -1,0 +1,44 @@
+# Configuració principal del llibre
+book:
+  title: "Informàtica I – IES Joan Fuster de Bellreguard"
+  author: "Manuel – Departament d’Informàtica"
+  description: "Materials del curs d'Informàtica I (1r Batxillerat)"
+  language: "ca"
+  src: "docs"
+
+# Estructura del llibre
+# mdBook utilitza SUMMARY.md per generar la navegació
+# Però també permet definir la configuració ací.
+build:
+  build-dir: "book"
+  create-missing: true
+
+# Estil del tema
+theme:
+  default: "light"
+  preferred-dark-theme: "navy"
+  light:
+    background: "#ffffff"
+    text: "#000000"
+    link: "#1a73e8"
+  navy:
+    background: "#0a1a2f"
+    text: "#ffffff"
+    link: "#4dabf7"
+
+# Extensions opcionals
+output:
+  html:
+    default-theme: "light"
+    preferred-dark-theme: "navy"
+    mathjax-support: true
+    copy-fonts: true
+
+# Plugins recomanats
+preprocessor:
+  - mermaid
+  - links
+
+# Configuració de navegació
+# mdBook genera la navegació a partir de SUMMARY.md,
+# però ací deixem la configuració general.
